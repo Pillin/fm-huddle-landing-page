@@ -1,0 +1,16 @@
+{
+  "card": {
+    "title": "Build The Community Your Fans Will Love",
+    "description": "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.",
+    "image": {
+      "mobile": "/images/illustration-mockups.svg",
+      "desktop": "/images/illustration-mockups.svg"
+    }
+  },
+  "background": {
+    "image": {
+      "mobile": "/images/bg-mobile.svg",
+      "desktop": "/images/bg-desktop.svg"
+    }
+  }
+}

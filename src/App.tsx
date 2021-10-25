@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from "@emotion/styled";
+import { IMG } from "./components/Image";
+import Card from './components/Card';
+import { card, background } from "./data.json"
+
+const Container = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(257, 40%, 49%);
+  min-height:100vh;
+  height: 100%;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <IMG
+        {...background.image}
+        alt=""
+        style={{
+          aspectRatio: "1440 / 800",
+          height: "100vh",
+          zIndex: 2,
+          position: "fixed"
+        }} />
+      <Card button={{ label: "Register" }} {...card} />
+    </Container>
   );
 }
 
